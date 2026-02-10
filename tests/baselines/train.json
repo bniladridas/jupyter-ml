@@ -1,0 +1,29 @@
+[
+  {
+    "index": 1,
+    "outputs": [
+      {
+        "output_type": "stream",
+        "text": "Loading training data...\nX_train shape: (3, 2)\ny_train shape: (3,)\n"
+      }
+    ]
+  },
+  {
+    "index": 2,
+    "outputs": [
+      {
+        "output_type": "stream",
+        "text": "Training model...\nModel trained: LogisticRegression\n"
+      }
+    ]
+  },
+  {
+    "index": 3,
+    "outputs": [
+      {
+        "output_type": "stream",
+        "text": "Training accuracy: 1.0\n"
+      }
+    ]
+  }
+]

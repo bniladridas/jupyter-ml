@@ -1,0 +1,44 @@
+---
+name: CI
+
+on:
+  push: ~
+  pull_request: ~
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - run: pip install -e .[dev]
+
+      - run: pytest
+
+  notebook-regression:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install kernel
+        run: |
+          pip install ipykernel
+          python -m ipykernel install --user --name python3
+
+      - name: Install nbconvert
+        run: pip install nbconvert
+
+      - name: Run notebook regression
+        run: |
+          jupyter nbconvert --execute examples/basic.ipynb \
+            --to notebook --output /tmp/executed.ipynb

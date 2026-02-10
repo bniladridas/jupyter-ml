@@ -1,0 +1,20 @@
+[
+  {
+    "index": 1,
+    "outputs": [
+      {
+        "output_type": "stream",
+        "text": "Loading test data...\nX_test shape: (2, 2)\n"
+      }
+    ]
+  },
+  {
+    "index": 2,
+    "outputs": [
+      {
+        "output_type": "stream",
+        "text": "Test accuracy: 1.0\n"
+      }
+    ]
+  }
+]
