@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/basebin/jupyterml/main/.github/assets/thumbnail.png" alt="jupyterml" width="100%">
+</p>
+
 # jupyter[ml]
 
 Infra-grade ML automation for Jupyter notebooks.
