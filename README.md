@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/basebin/jupyterml/main/.github/assets/thumbnail.png" alt="jupyterml" width="100%">
+  <img src="https://raw.githubusercontent.com/Coccinella-Labs/jupyterml/main/.github/assets/thumbnail.png" alt="jupyterml" width="100%">
 </p>
 
 # jupyter[ml]
